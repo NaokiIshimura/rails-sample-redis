@@ -2,6 +2,8 @@
 
 ## Redis
 
+[ステップ 5: クラスターのノードに接続する - Amazon ElastiCache](https://docs.aws.amazon.com/ja_jp/AmazonElastiCache/latest/UserGuide/GettingStarted.ConnectToCacheNode.html)
+
 ```
 redis-cli -c -h test-redis.jtn6nh.0001.apse1.cache.amazonaws.com:6379
 
