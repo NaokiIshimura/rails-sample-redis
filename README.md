@@ -5,8 +5,12 @@
 [ステップ 5: クラスターのノードに接続する - Amazon ElastiCache](https://docs.aws.amazon.com/ja_jp/AmazonElastiCache/latest/UserGuide/GettingStarted.ConnectToCacheNode.html)
 
 ```
-redis-cli -c -h test-redis.jtn6nh.0001.apse1.cache.amazonaws.com:6379
+redis-cli -c -h test-redis.jtn6nh.0001.apse1.cache.amazonaws.com -p 6379
 
+# DB
+select 0~15
+
+# set, get
 set hoge huga
 get hoge
 
