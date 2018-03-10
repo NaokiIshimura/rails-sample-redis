@@ -4,6 +4,22 @@
 
 [ステップ 5: クラスターのノードに接続する - Amazon ElastiCache](https://docs.aws.amazon.com/ja_jp/AmazonElastiCache/latest/UserGuide/GettingStarted.ConnectToCacheNode.html)
 
+### Install
+
+```
+sudo yum install gcc
+
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make distclean  // Ubuntu systems only
+make
+
+src/redis-cli -c -h mycachecluster.eaogs8.0001.usw2.cache.amazonaws.com -p 6379
+```
+
+### CLI
+
 ```
 redis-cli -c -h test-redis.jtn6nh.0001.apse1.cache.amazonaws.com -p 6379
 
