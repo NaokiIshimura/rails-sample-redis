@@ -21,7 +21,7 @@ src/redis-cli -c -h mycachecluster.eaogs8.0001.usw2.cache.amazonaws.com -p 6379
 ### CLI
 
 ```
-redis-cli -c -h test-redis.jtn6nh.0001.apse1.cache.amazonaws.com -p 6379
+redis-cli -c -h mycachecluster.eaogs8.0001.usw2.cache.amazonaws.com -p 6379
 
 # DB
 select 0~15
@@ -47,7 +47,7 @@ gem 'redis-rails'
 # /redis-test/config/application.rb
 
 config.cache_store = :redis_store, {
-  host: "test-redis.jtn6nh.0001.apse1.cache.amazonaws.com",
+  host: "mycachecluster.eaogs8.0001.usw2.cache.amazonaws.com",
   port: 6379,
   db: 0,
   #password: "mysecret",
@@ -63,7 +63,7 @@ config.cache_store = :redis_store, {
 Rails.application.config.session_store :redis_store, {
   servers: [
     {
-      host: "test-redis.jtn6nh.0001.apse1.cache.amazonaws.com",
+      host: "mycachecluster.eaogs8.0001.usw2.cache.amazonaws.com",
       port: 6379,
       db: 0,
       #password: "mysecret",
